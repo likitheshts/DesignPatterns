@@ -13,5 +13,9 @@ public class CoffeeService {
         coffee = new SimpleCoffee();
 
         System.out.println("simple"+ coffee.getPrice());
+
+        coffee = new AlmondMilkDecorator(coffee);
+
+        System.out.println("almond " + coffee.getPrice());
     }
 }

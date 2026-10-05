@@ -12,12 +12,12 @@ public class ObserverService {
         Observers rahul = new User();
         Observers sam = new EmailNotify();
 
-        StockPriceImpl stockPriceObservable = new StockPriceImpl(20);
+        StockPriceImpl stockPriceObservable = new StockPriceImpl(0);
         stockPriceObservable.add(liki);
         stockPriceObservable.add(rahul);
         stockPriceObservable.add(sam);
 
 
-        stockPriceObservable.setData(100);
+        stockPriceObservable.setData(20);
     }
 }
